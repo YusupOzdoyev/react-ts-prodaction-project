@@ -1,5 +1,5 @@
 name: linting, testing, building
-on: 
+on:
   push:
     branches: [ master ]
   pull_request:
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        noda-version: [ 17.x]
+        node-version: [ 17.x ]
 
     steps:
       - uses: actions/checkout@v2
