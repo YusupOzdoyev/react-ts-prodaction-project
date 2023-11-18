@@ -1,7 +1,37 @@
 {
+  "eslint.codeActionsOnSave.rules": null,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  // formatters
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": [
+    "scss"
+  ],
+  "editor.formatOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "editor.codeActionsOnSave": {
+    "source.removeUnusedImports": true,
+    "source.fixAll.eslint": true,
+    "source.organizeImports": false,
+    "source.fixAll.stylelint": true,
+  },
+  // other
   "i18n-ally.localesPaths": [
     "public/locales",
     "src/shared/config/i18n"
   ],
-  "eslint.codeActionsOnSave.rules": null
+  "i18n-ally.keystyle": "nested",
+  "editor.snippetSuggestions": "top",
+  "editor.suggest.snippetsPreventQuickSuggestions": false
 }
