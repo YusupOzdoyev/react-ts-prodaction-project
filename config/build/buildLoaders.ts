@@ -9,7 +9,7 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
     };
 
     const babelLoader = {
-        test: /\.(js||jsx||tsx)$/,
+        test: /\.(js|jsx|tsx)$/,
         exclude: /node_modules/,
         use: {
             loader: 'babel-loader',
@@ -18,10 +18,9 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
                 plugins: [
                     [
                         'i18next-extract',
-
                         {
                             locales: ['ru', 'en'],
-                            keyAsDefaultValues: true,
+                            keyAsDefaultValue: true,
                         },
                     ],
                 ],
@@ -31,7 +30,7 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
 
     const cssLoader = buildCssLoader(isDev);
 
-    // если не используем TS - нужен babel-loader
+    // Если не используем тайпскрипт - нужен babel-loader
     const typescriptLoader = {
         test: /\.tsx?$/,
         use: 'ts-loader',

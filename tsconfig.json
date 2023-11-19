@@ -1,46 +1,35 @@
 {
   "compilerOptions": {
-    //куда будет происходить сборка, но в нашем случае сборка при помощи webpack
-    "outDir": "./dist/",
-    // подсвечивает все места где не указан тип
-    // однако это не означает что теперь нельзя использовать any
-    // это означает лишь, что в подобных ситуациях разработчик должен явно писать any
+    "outDir": "./build/",
     "noImplicitAny": true,
     "module": "ESNext",
-    // в какую спецификацию компилируем: для поддержки большинства браузеров
+    // target es5 or es6
     "target": "es5",
     "jsx": "react-jsx",
-    //компилятор будет обрабатывать не только .ts но и .js
-    "allowJs": true, 
+    "allowJs": true,
     "moduleResolution": "node",
-    //для абсолютного импорта
+    // use imports/exports with commonjs requires
+    "esModuleInterop": true,
+    // default imports - "import name" instead of "import * as name"
+    "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
-      "*": ["./src/*"]
+      "*": [
+        "./src/*"
+      ]
     },
-    // esModuleInterop позволяет работать с пакетами
-    // которые используют common js как с обычными пакетами с помощью
-    // import ( require() module.export ) = commonjs
-    // import Moment from "moment"; без флага esModuleInterop результат undefined
-    // console.log(Moment)
-    // с флагом результат [object Object]
-    // console.log(Moment)
-    "esModuleInterop": true,
-    // Если какая-либо библиотека не имеет default import,
-    // лоадеры вроде ts-loader или babel-loader автоматически создают их
-    // вместо такого импорта import * as React from 'react';
-    // можно писать такой 
-    // import React from 'react';
-    "allowSyntheticDefaultImports": true
-  },
-    "ts-node": {
-      "compilerOptions": {
-        "module": "CommonJS"
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
       }
-    },
-    "include": [
-      "./config/jest/setupTests.ts",
-      "./src/**/*.ts",
-      "./src/**/*.tsx",
     ]
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "include": [
+    "."
+  ]
 }
