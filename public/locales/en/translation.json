@@ -13,5 +13,7 @@
   "Главная": "Main",
   "Переключить": "Toggle",
   "Короткий язык": "En",
-  "Войти": "To come in"
+  "Войти": "To come in",
+  "Введите username": "Enter username",
+  "Введите пароль": "Enter password"
 }
