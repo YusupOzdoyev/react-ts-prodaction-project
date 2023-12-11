@@ -21,10 +21,10 @@
   "editor.formatOnSave": true,
   "eslint.alwaysShowStatus": true,
   "editor.codeActionsOnSave": {
-    "source.removeUnusedImports": "explicit",
-    "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "never",
-    "source.fixAll.stylelint": "explicit"
+    "source.removeUnusedImports": true,
+    "source.fixAll.eslint": true,
+    "source.organizeImports": false,
+    "source.fixAll.stylelint": true,
   },
   // other
   "i18n-ally.localesPaths": [
