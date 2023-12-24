@@ -5,5 +5,10 @@
   "Вашa фамилия": "Your lastname",
   "Произошла ошибка при загрузке профиля": "There was an error loading your profile",
   "Попробуйте обновить страницу": "Try refreshing the page",
-  "Отменить": "Cancel"
+  "Отменить": "Cancel",
+  "Сохранить": "Save",
+  "Ваш возраст": "Your age",
+  "Город": "City",
+  "Введите имя пользователя": "Enter username",
+  "Введите ссылку на аватар": "Enter a link to avatar"
 }

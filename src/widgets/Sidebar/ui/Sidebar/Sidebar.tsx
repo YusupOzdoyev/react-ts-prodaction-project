@@ -8,7 +8,7 @@ import cls from './Sidebar.module.scss';
 import { SidebarItem } from '../SidebarItem/SidebarItem';
 
 interface SidebarProps {
-  className?: string;
+    className?: string;
 }
 
 export const Sidebar = memo(({ className }: SidebarProps) => {

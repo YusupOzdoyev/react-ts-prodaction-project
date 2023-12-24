@@ -13,6 +13,10 @@ export {
 } from './model/service/fetchProfileData/fetchProfileData';
 
 export {
+    updateProfileData,
+} from './model/service/updateProfileData/updateProfileData';
+
+export {
     ProfileCard,
 } from './ui/ProfileCard/ProfileCard';
 
