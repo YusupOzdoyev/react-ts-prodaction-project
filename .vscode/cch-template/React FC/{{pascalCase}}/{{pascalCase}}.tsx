@@ -6,7 +6,8 @@
 //   className?: string;
 // }
 
-// export const {{pascalCase}} = ({className}: {{pascalCase}}Props) => {
+// export const {{pascalCase}} = (props: {{pascalCase}}Props) => {
+//   const { className } = props;
 //   const {t} = useTranslation();
 //   return (
 //     <div className={classNames(cls.{{pascalCase}}, {}, [className])}>

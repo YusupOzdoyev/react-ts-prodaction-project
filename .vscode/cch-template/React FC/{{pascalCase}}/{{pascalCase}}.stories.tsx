@@ -13,7 +13,5 @@
 
 // const Template: ComponentStory<typeof {{pascalCase}}> = (args) => <{{pascalCase}} {...args} />;
 
-// export const Primary = Template.bind({});
-// Primary.args = {
-//     children: 'Text',
-// };
+// export const Normal = Template.bind({});
+// Normal.args = {};
