@@ -126,13 +126,15 @@
       "id": "1",
       "text": "some comment",
       "articleId": "1",
-      "userId": "1"
+      "userId": "1",
+      "avatar": "https://fineproxy.org/wp-content/uploads/2023/05/Hacker.jpg"
     },
     {
       "id": "2",
       "text": "some comment 2",
       "articleId": "1",
-      "userId": "1"
+      "userId": "1",
+      "avatar": "https://sun9-48.userapi.com/impf/WZ_jj7XM1HYrHg228-Bz07CNZPHaLK-Qvq5N9w/DKVFrOAnORk.jpg?size=640x480&quality=96&sign=462662bc61898151914b82e4f38e3298&type=album"
     },
     {
       "id": "3",
@@ -146,13 +148,15 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN"
+      "role": "ADMIN",
+      "avatar": "https://sun9-48.userapi.com/impf/WZ_jj7XM1HYrHg228-Bz07CNZPHaLK-Qvq5N9w/DKVFrOAnORk.jpg?size=640x480&quality=96&sign=462662bc61898151914b82e4f38e3298&type=album"
     },
     {
-      "id": "1",
+      "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER"
+      "role": "USER",
+      "avatar": "https://sun9-48.userapi.com/impf/WZ_jj7XM1HYrHg228-Bz07CNZPHaLK-Qvq5N9w/DKVFrOAnORk.jpg?size=640x480&quality=96&sign=462662bc61898151914b82e4f38e3298&type=album"
     }
   ],
   "profile": {
