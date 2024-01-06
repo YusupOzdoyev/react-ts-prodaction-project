@@ -141,6 +141,12 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "sas",
+      "id": "T2nFQFs"
     }
   ],
   "users": [
@@ -156,17 +162,31 @@
       "username": "user",
       "password": "123",
       "role": "USER",
-      "avatar": "https://sun9-48.userapi.com/impf/WZ_jj7XM1HYrHg228-Bz07CNZPHaLK-Qvq5N9w/DKVFrOAnORk.jpg?size=640x480&quality=96&sign=462662bc61898151914b82e4f38e3298&type=album"
+      "avatar": "https://fineproxy.org/wp-content/uploads/2023/05/Hacker.jpg"
     }
   ],
-  "profile": {
-    "first": "Юсуп",
-    "lastname": "Оздоев",
-    "age": 30,
-    "currency": "RUB",
-    "country": "Belarus",
-    "city": "Moscow",
-    "username": "admin",
-    "avatar": "https://sun9-48.userapi.com/impf/WZ_jj7XM1HYrHg228-Bz07CNZPHaLK-Qvq5N9w/DKVFrOAnORk.jpg?size=640x480&quality=96&sign=462662bc61898151914b82e4f38e3298&type=album"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Юсуп",
+      "lastname": "Оздоев",
+      "age": 30,
+      "currency": "RUB",
+      "country": "Belarus",
+      "city": "Moscow",
+      "username": "admin",
+      "avatar": "https://sun9-48.userapi.com/impf/WZ_jj7XM1HYrHg228-Bz07CNZPHaLK-Qvq5N9w/DKVFrOAnORk.jpg?size=640x480&quality=96&sign=462662bc61898151914b82e4f38e3298&type=album"
+    },
+    {
+      "id": "2",
+      "first": "Игорь",
+      "lastname": "Крутой",
+      "age": 66,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Kaspiysk",
+      "username": "neadmin",
+      "avatar": "https://fineproxy.org/wp-content/uploads/2023/05/Hacker.jpg"
+    }
+  ]
 }
