@@ -6,7 +6,6 @@ import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { useSelector } from 'react-redux';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
-import { sendComment } from 'features/addCommentForm/model/services/sendComment/sendComment';
 import { addCommentFormActions, addCommentFormReducer } from '../../model/slices/addCommentFormSlice';
 import {
     getAddCommentFormError,
@@ -14,15 +13,16 @@ import {
 } from '../../model/selectors/addCommentFormSelectors';
 import cls from './AddCommentForm.module.scss';
 
-interface AddCommentFormProps {
+export interface AddCommentFormProps {
     className?: string;
+    onSendComment: (text: string) => void;
 }
 const reducers: ReducersList = {
     addCommentForm: addCommentFormReducer,
 };
 
 const AddCommentForm = memo((props: AddCommentFormProps) => {
-    const { className } = props;
+    const { className, onSendComment } = props;
     const { t } = useTranslation();
     const text = useSelector(getAddCommentFormText);
     const error = useSelector(getAddCommentFormError);
@@ -32,9 +32,10 @@ const AddCommentForm = memo((props: AddCommentFormProps) => {
         dispatch(addCommentFormActions.setText(value));
     }, [dispatch]);
 
-    const onSendComment = useCallback(() => {
-        dispatch(sendComment());
-    }, [dispatch]);
+    const onSendHandler = useCallback(() => {
+        onSendComment(text || '');
+        onCommentTextChange('');
+    }, [onCommentTextChange, onSendComment, text]);
 
     return (
         <DynamicModuleLoader reducers={reducers}>
@@ -47,7 +48,7 @@ const AddCommentForm = memo((props: AddCommentFormProps) => {
                 />
                 <Button
                     theme={ButtonTheme.OUTLINE}
-                    onClick={onSendComment}
+                    onClick={onSendHandler}
                 >
                     {t('Отправить')}
                 </Button>
