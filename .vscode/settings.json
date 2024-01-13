@@ -36,5 +36,8 @@
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "[typescriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
   }
 }
