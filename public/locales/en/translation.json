@@ -29,5 +29,18 @@
   "Введите текст комментария": "Enter comment text",
   "Отправить": "Send",
   "Читать далее...": "Read more...",
-  "Назад к списку": "Back to list"
+  "Назад к списку": "Back to list",
+  "Сортировать ПО": "Sort by",
+  "Поиск": "Search",
+  "по": "by",
+  "возрастанию": "increasing",
+  "убыванию": "descending",
+  "дате создания": "creation date",
+  "названию": "name",
+  "просмотрам": "views",
+  "Айти": "It",
+  "Все статьи": "All articles",
+  "Экономика": "Economics",
+  "Наука": "Science",
+  "Статьи не найдены": "Articles not found"
 }
